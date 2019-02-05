@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations' 
 import { DataService } from './data.service'
+import { NgxLoadingModule } from 'ngx-loading';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DataService } from './data.service'
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    BrowserAnimationsModule  
+    BrowserAnimationsModule,
+    NgxLoadingModule.forRoot({})
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
